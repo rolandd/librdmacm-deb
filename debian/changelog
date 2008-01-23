@@ -1,0 +1,5 @@
+librdmacm (1.0.5-1) unstable; urgency=low
+
+  * Initial Release.  (Closes: #XXXXXX)
+
+ -- Roland Dreier <rolandd@cisco.com>  Tue, 22 Jan 2008 20:16:22 -0800

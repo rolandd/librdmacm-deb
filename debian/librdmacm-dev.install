@@ -1,0 +1,4 @@
+usr/include
+usr/lib/librdmacm*.{a,la,so}
+usr/share/man/man3
+usr/share/man/man7

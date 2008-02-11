@@ -1,3 +1,9 @@
+librdmacm (1.0.6-2) unstable; urgency=low
+
+  * We actually require libibverbs 1.1 (not 1.0) to build.
+
+ -- Roland Dreier <rolandd@cisco.com>  Mon, 11 Feb 2008 14:50:00 -0800
+
 librdmacm (1.0.6-1) unstable; urgency=low
 
   * Initial Release.  (Closes: #462348)

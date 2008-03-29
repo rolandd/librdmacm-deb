@@ -1,9 +1,15 @@
 librdmacm (1.0.7-1) unstable; urgency=low
 
+  * New upstream release:
+    - Set status correctly for rejects.
+    - Add new function rdma_migrate_id().
   * We actually require libibverbs 1.1 (not 1.0) to build.
   * Add debian/watch file.
+  * Use DEB_DH_MAKESHLIBS_ARGS_ALL to pass appropriate -V option to
+    dh_makeshlibs, since a new symbol rdma_migrate_id() was added in 
+    librdmacm 1.0.7.
 
- -- Roland Dreier <rolandd@cisco.com>  Fri, 28 Mar 2008 20:40:59 -0700
+ -- Roland Dreier <rolandd@cisco.com>  Fri, 28 Mar 2008 20:44:44 -0700
 
 librdmacm (1.0.6-1) unstable; urgency=low
 

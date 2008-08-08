@@ -1,3 +1,12 @@
+librdmacm (1.0.8-1) unstable; urgency=low
+
+  * New upstream release:
+    - Report address change and timewait exit events (requires 
+      kernel 2.6.27).
+    - Minor enhancements to example programs.
+
+ -- Roland Dreier <rolandd@cisco.com>  Fri, 08 Aug 2008 14:24:16 -0700
+
 librdmacm (1.0.7-1) unstable; urgency=low
 
   * New upstream release:

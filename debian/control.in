@@ -49,7 +49,7 @@ Description: Development files for the librdmacm library
  needed for compiling.
 
 Package: librdmacm1-dbg
-Section: libdevel
+Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends}, librdmacm1 (= ${binary:Version})

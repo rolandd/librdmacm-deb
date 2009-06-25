@@ -1,3 +1,9 @@
+librdmacm (1.0.8-2) unstable; urgency=low
+
+  * Update to Standards-Version: 3.8.2.
+
+ -- Roland Dreier <rolandd@cisco.com>  Thu, 25 Jun 2009 10:32:42 -0700
+
 librdmacm (1.0.8-1) unstable; urgency=low
 
   * New upstream release:

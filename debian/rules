@@ -1,9 +1,15 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-DEB_DH_INSTALL_SOURCEDIR := debian/tmp
-DEB_AUTO_UPDATE_LIBTOOL := post
-DEB_DH_MAKESHLIBS_ARGS_ALL := -V 'librdmacm1 (>= 1.0.7)'
+%:
+	dh $@
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
+override_dh_strip:
+	dh_strip --dbg-package=librdmacm1-dbg
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V 'librdmacm1 (>= 1.0.7)'
+
+override_dh_auto_configure:
+	autoreconf -f -i
+	dh_auto_configure

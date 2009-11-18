@@ -1,9 +1,11 @@
-librdmacm (1.0.8-2) unstable; urgency=low
+librdmacm (1.0.10-1) unstable; urgency=low
 
   * Update to Standards-Version: 3.8.3 (no changes needed).
   * Move -dbg package to section debug.
+  * New upstream release:
+    - Many small fixes.
 
- -- Roland Dreier <rolandd@cisco.com>  Wed, 11 Nov 2009 14:28:08 -0800
+ -- Roland Dreier <rolandd@cisco.com>  Wed, 18 Nov 2009 15:04:55 -0800
 
 librdmacm (1.0.8-1) unstable; urgency=low
 

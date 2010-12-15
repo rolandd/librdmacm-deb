@@ -9,6 +9,7 @@ Description: Add check for libpthread during configure
 Author: Roland Dreier <rdreier@cisco.com>
 Bug-Debian: http://bugs.debian.org/555380
 Forwarded: http://article.gmane.org/gmane.linux.drivers.rdma/6954
+Applied-Upstream: http://git.openfabrics.org/git?p=~shefty/librdmacm.git;a=commitdiff;h=384bfc1fb1bcb292904376efc13a1db84971ee6c
 Index: librdmacm-1.0.14/configure.in
 ===================================================================
 --- librdmacm-1.0.14.orig/configure.in	2010-12-15 11:38:46.174436000 -0800

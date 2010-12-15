@@ -1,3 +1,14 @@
+librdmacm (1.0.14-1) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * New upstream release.
+    - Add IPv6 support
+    - Add new higher-level, simpler API
+    - Add new client/server examples
+  * Link directly with libpthread.  (Closes: #555380)
+
+ -- Roland Dreier <rolandd@cisco.com>  Wed, 15 Dec 2010 11:24:19 -0800
+
 librdmacm (1.0.10-1) unstable; urgency=low
 
   * Update to Standards-Version: 3.8.3 (no changes needed).
@@ -11,7 +22,7 @@ librdmacm (1.0.10-1) unstable; urgency=low
 librdmacm (1.0.8-1) unstable; urgency=low
 
   * New upstream release:
-    - Report address change and timewait exit events (requires 
+    - Report address change and timewait exit events (requires
       kernel 2.6.27).
     - Minor enhancements to example programs.
 
@@ -25,7 +36,7 @@ librdmacm (1.0.7-1) unstable; urgency=low
   * We actually require libibverbs 1.1 (not 1.0) to build.
   * Add debian/watch file.
   * Use DEB_DH_MAKESHLIBS_ARGS_ALL to pass appropriate -V option to
-    dh_makeshlibs, since a new symbol rdma_migrate_id() was added in 
+    dh_makeshlibs, since a new symbol rdma_migrate_id() was added in
     librdmacm 1.0.7.
 
  -- Roland Dreier <rolandd@cisco.com>  Fri, 28 Mar 2008 20:44:44 -0700

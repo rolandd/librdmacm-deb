@@ -1,0 +1,24 @@
+Description: Add check for libpthread during configure
+ Add a check for libpthread during librdmacm configure.  This will add
+ libpthread to the list of libraries that librdmacm is linked to.
+ Currently librdmacm gets libpthread implicitly through libibverbs, but
+ this breaks when using a linker that does not implicitly link with such
+ dependencies; eg the new gold linker is such a linker:
+ .
+ <http://wiki.debian.org/qa.debian.org/FTBFS#A2009-11-02Packagesfailingbecausebinutils-gold.2BAC8-indirectlinking>
+Author: Roland Dreier <rdreier@cisco.com>
+Bug-Debian: http://bugs.debian.org/555380
+Forwarded: http://article.gmane.org/gmane.linux.drivers.rdma/6954
+Index: librdmacm-1.0.14/configure.in
+===================================================================
+--- librdmacm-1.0.14.orig/configure.in	2010-12-15 11:38:46.174436000 -0800
++++ librdmacm-1.0.14/configure.in	2010-12-15 11:39:01.193264000 -0800
+@@ -45,6 +45,8 @@
+ AC_CHECK_SIZEOF(long)
+ 
+ dnl Checks for libraries
++AC_CHECK_LIB(pthread, pthread_mutex_init, [],
++    AC_MSG_ERROR([pthread_mutex_init() not found.  librdmacm requires libpthread.]))
+ if test "$disable_libcheck" != "yes"; then
+ AC_CHECK_LIB(ibverbs, ibv_get_device_list, [],
+     AC_MSG_ERROR([ibv_get_device_list() not found.  librdmacm requires libibverbs.]))

@@ -1,6 +1,7 @@
-librdmacm (1.0.14-1) unstable; urgency=low
+librdmacm (1.0.14-1) experimental; urgency=low
 
   * Switch to dpkg-source 3.0 (quilt) format.
+  * Update to Standards-Version: 3.9.1 (no changes needed).
   * New upstream release.
     - Add IPv6 support
     - Add new higher-level, simpler API

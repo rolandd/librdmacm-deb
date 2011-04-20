@@ -2,8 +2,9 @@ librdmacm (1.0.14.1-1) unstable; urgency=low
 
   * New upstream release.
     - Fix problem with some versions of cxgb3 driver
+  * Update to Standards-Version: 3.9.2 (no changes needed).
 
- -- Roland Dreier <roland@digitalvampire.org>  Wed, 20 Apr 2011 10:08:57 -0700
+ -- Roland Dreier <roland@digitalvampire.org>  Wed, 20 Apr 2011 10:10:45 -0700
 
 librdmacm (1.0.14-1) experimental; urgency=low
 

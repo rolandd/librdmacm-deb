@@ -11,7 +11,7 @@ Package: librdmacm1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A library for managing RDMA connections
+Description: Library for managing RDMA connections
  librdmacm is a library that allows applications to set up reliable
  connected and unreliable datagram transfers when using RDMA adapters.
  It provides a transport-neutral interface in the sense that the same

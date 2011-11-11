@@ -1,4 +1,5 @@
 usr/include
-usr/lib/librdmacm*.{a,so}
+usr/lib/librdmacm*.a
+usr/lib/librdmacm*.so
 usr/share/man/man3
 usr/share/man/man7

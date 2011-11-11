@@ -1,8 +1,9 @@
 librdmacm (1.0.14.1-2) unstable; urgency=low
 
   * Don't ship .la files.  (Closes: #633229)
+  * Don't use brace expansion for {a,so} in librdmacm-dev.install
 
- -- Roland Dreier <roland@digitalvampire.org>  Tue, 12 Jul 2011 21:15:18 -0700
+ -- Roland Dreier <roland@digitalvampire.org>  Fri, 11 Nov 2011 15:03:16 -0800
 
 librdmacm (1.0.14.1-1) unstable; urgency=low
 

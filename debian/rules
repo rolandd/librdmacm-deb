@@ -8,7 +8,7 @@ override_dh_strip:
 	dh_strip --dbg-package=librdmacm1-dbg
 
 override_dh_makeshlibs:
-	dh_makeshlibs -V 'librdmacm1 (>= 1.0.7)'
+	dh_makeshlibs -V 'librdmacm1 (>= 1.0.12)'
 
 override_dh_auto_configure:
 	autoreconf -f -i

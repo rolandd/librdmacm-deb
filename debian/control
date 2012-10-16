@@ -1,14 +1,15 @@
 Source: librdmacm
 Priority: extra
 Maintainer: Roland Dreier <rbd@debian.org>
-Build-Depends: autoconf, automake, libtool, debhelper (>= 7.0.50~), dpkg-dev (>= 1.13.19), libibverbs-dev (>= 1.1)
-Standards-Version: 3.9.3
+Build-Depends: autoconf, automake, libtool, debhelper (>= 9), dpkg-dev (>= 1.13.19), libibverbs-dev (>= 1.1)
+Standards-Version: 3.9.4
 Section: libs
 Homepage: http://www.openfabrics.org/
 
 Package: librdmacm1
 Section: libs
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Library for managing RDMA connections
  librdmacm is a library that allows applications to set up reliable
